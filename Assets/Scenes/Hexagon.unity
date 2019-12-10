@@ -459,3 +459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 859597b868be84fbb93bf29878521099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnRate: 1
+  hexoagonPrefab: {fileID: 7528682766767009066, guid: 2958e9127103d4597a5751e095808c5a,
+    type: 3}
