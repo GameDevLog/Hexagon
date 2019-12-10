@@ -1,18 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float moveSpeed = 600f;
+    private float movement;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        movement = Input.GetAxis("Horizontal");
+    }
+
+    private void FixedUpdate()
+    {
+        transform.RotateAround(Vector3.zero, Vector3.back, movement * Time.fixedDeltaTime * moveSpeed);
     }
 }
